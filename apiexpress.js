@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const hostname = '0.0.0.0'
 const port = 3001;
 app.use(express.json());
 const metricData = [
@@ -262,6 +261,6 @@ app.get("/GetMetricData", async (req, res) => {
 		console.error(error);
 	}
 });
-app.listen(port,hostname,() =>{
+app.listen(port,() =>{
     console.log(`Server running at http://${hostname}:${port}/`);
  });
