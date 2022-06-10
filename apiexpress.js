@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const hostname = "https://livespacesproject.netlify.app";
+const hostname = process.env.EXPRESS_HOSTNAME
 const port = 3001;
 app.use(express.json());
 const metricData = [
