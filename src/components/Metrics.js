@@ -15,8 +15,8 @@ const Metrics = (props) => {
                                     <div className="card-text row">
                                         {each.info.map(user =>
                                             <div className="col-sm-3 info">
-                                                <p className="username">{user.userName.length > 11 ? user.userName.slice(0,11)+'...' : user.userName}</p> 
-                                                <p className="address">@{user.address.length > 8 ? user.address.slice(0,8)+"..." : user.address}</p>  
+                                                <p className="username">@{user.userName.length > 11 ? user.userName.slice(0,11)+'...' : user.userName}</p> 
+                                                <p className="address">{user.address.length > 8 ? user.address.slice(0,8)+"..." : user.address}</p>  
                                             </div>
                                         )}
                                         
