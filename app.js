@@ -252,7 +252,9 @@ const metricData = [
     },
 ];
 
-
+app.get('/', function(req, res){
+    res.send("Hello ");
+});
 app.get("/GetMetricData", async (req, res) => {	
 	try {
 		res.set('Access-Control-Allow-Origin', '*');
