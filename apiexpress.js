@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const hostname = "https://livespacesproject.netlify.app";
 const port = 3001;
 app.use(express.json());
 const metricData = [
@@ -261,4 +262,6 @@ app.get("/GetMetricData", async (req, res) => {
 		console.error(error);
 	}
 });
-app.listen(port);
+app.listen(port,hostname,() =>{
+    console.log(`Server running at http://${hostname}:${port}/`);
+ });
