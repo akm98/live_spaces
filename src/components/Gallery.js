@@ -10,7 +10,7 @@ const Gallery = () => {
 		getData();
 	},[])
 	const getData=()=>{
-		//const url = process.env.REACT_APP_API_URL ;
+		const url = process.env.REACT_APP_API_URL ;
 		axios.get(`GetMetricData`)
       		.then(res => {
 				setMetricData(res.data.metricData)
